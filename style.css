@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+    font-size: 50px;
+}   
+body{
+        background-color: white;
+        font-family: "Merriweather", sans-serif;        
+    }
+    h1{
+        font-family: "PorschaC", sans-serif;
+    }
+    h2{
+        font-family: "PorschaC", sans-serif;
+    }   
+    li{
+        font-family: "PorschaC", sans-serif;
+        font-weight: bold;
+    }
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+    }
