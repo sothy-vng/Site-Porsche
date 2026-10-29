@@ -1,22 +1,260 @@
-.title{
+/* Définition officielle de la police Porsche Next */
+@font-face {
+    font-family: "Porsche Next";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.ui.porsche.com/porsche-design-system/fonts/porsche-next-latin-regular.b8f1c20.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Porsche Next";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn.ui.porsche.com/porsche-design-system/fonts/porsche-next-latin-semi-bold.b5f6fca.woff2") format("woff2");
+    font-display: swap;
+}
+
+.maintitle {
     text-align: center;
     font-size: 50px;
-}   
-body{
-        background-color: white;
-        font-family: "Merriweather", sans-serif;        
+}
+
+.titleh1 {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.titleh2 {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.titleli {
+    text-align: justify;
+    font-size: 15px;
+}
+
+body {
+    background-color: white;
+    font-family: "Porsche Next", Arial, sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+/* Sélecteur de langue élégant */
+.lang-selector {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.lang-selector:hover {
+    background-color: #ededed;
+    border-color: #bbb;
+}
+
+.lang-selector svg {
+    color: #333;
+}
+
+.lang-selector select {
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    color: #111;
+}
+
+
+.btn-user {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-user svg {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-user:hover svg {
+    transform: scale(1.08);
+}
+
+.flag-current {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease;
+}
+
+.btn-user:hover .flag-current {
+    transform: scale(1.08);
+}
+
+/* Texte "Compte" qui apparaît au survol sous l'icône */
+.user-label {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-3px);
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #111;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.btn-user:hover .user-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+h1,
+h2 {
+    font-family: "PorschaC", sans-serif;
+}
+
+p, span, a, label, input, button, select, th, td, footer {
+    font-family: "Porsche Next", Arial, sans-serif;
+}
+
+li {
+    font-family: "PorschaC", sans-serif;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+/* Fond sombre flouté derrière la pop-up */
+.modal {
+    display: none;
+    /* Masqué par défaut */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fond noir transparent */
+    backdrop-filter: blur(4px);
+    /* Effet flou */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Boîte blanche centrale */
+.modal-contenu {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    animation: apparaitre 0.3s ease;
+}
+
+@keyframes apparaitre {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
     }
-    h1{
-        font-family: "PorschaC", sans-serif;
+
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
-    h2{
-        font-family: "PorschaC", sans-serif;
-    }   
-    li{
-        font-family: "PorschaC", sans-serif;
-        font-weight: bold;
-    }
-    table, th, td {
-        border: 1px solid black;
-        text-align: center;
-    }
+}
+
+/* Bouton pour fermer (croix) */
+.fermer {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #888;
+}
+
+.fermer:hover {
+    color: #000;
+}
+
+/* Boutons d'options */
+.btn-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.btn-option:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-1px);
+}
+
+.btn-porsche {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn-porsche:hover {
+    background-color: #d5001c;
+    /* Rouge Porsche */
+    color: #fff;
+}

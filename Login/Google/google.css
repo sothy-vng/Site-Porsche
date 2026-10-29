@@ -1,0 +1,27 @@
+/* Définition officielle de la police Porsche Next */
+@font-face {
+    font-family: "Porsche Next";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.ui.porsche.com/porsche-design-system/fonts/porsche-next-latin-regular.b8f1c20.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Porsche Next";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://cdn.ui.porsche.com/porsche-design-system/fonts/porsche-next-latin-semi-bold.b5f6fca.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Porsche Next", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}

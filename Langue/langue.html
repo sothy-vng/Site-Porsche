@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="C:\Users\VONG SOTHY\OneDrive\Bureau\HTML\Site Porsche\Images\Porsche.png">
+    <link rel="stylesheet" href="langue.css">
+    <script src="langue.js" defer></script>
+    <title> Sélecteur de pays - Porsche </title>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- Barre supérieure avec bouton retour -->
+        <header class="top-nav">
+            <a href="../index.html" class="btn-close" title="Retour à l'accueil" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+        </header>
+
+        <!-- Titre et sous-titre -->
+        <div class="market-header">
+            <h1> Select your market or region </h1>
+            <p> You are currently seeing content for <img id="current-market-flag" src="https://flagcdn.com/w80/fr.png" alt="Drapeau" class="flag-icon" style="width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin: 0 4px;"> <strong id="current-market"> France </strong></p>
+        </div>
+
+        <!-- Barre de recherche -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="market-search" placeholder="Search for your market or region" autocomplete="off">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Liste des régions -->
+        <div class="regions-list">
+
+            <!-- AFRIQUE -->
+            <div class="region-section open" data-region="africa">
+                <button class="region-toggle" type="button">
+                    <span class="region-title"> Africa </span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="egypt">
+                        <img src="https://flagcdn.com/w80/eg.png" alt="Egypt" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Egypt </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="la reunion">
+                        <img src="https://flagcdn.com/w80/re.png" alt="La Reunion" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> La Reunion </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="mauritius">
+                        <img src="https://flagcdn.com/w80/mu.png" alt="Mauritius" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Mauritius </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="morocco maroc">
+                        <img src="https://flagcdn.com/w80/ma.png" alt="Morocco" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Morocco </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="south africa afrique du sud">
+                        <img src="https://flagcdn.com/w80/za.png" alt="South Africa" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> South Africa </span>
+                            <span class="country-lang"> English</span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="tunisia tunisie">
+                        <img src="https://flagcdn.com/w80/tn.png" alt="Tunisia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Tunisia </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="other countries">
+                        <div class="flag-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="country-info">
+                            <span class="country-name"> Other countries </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ASIE -->
+            <div class="region-section" data-region="asia">
+                <button class="region-toggle" type="button">
+                    <span class="region-title"> Asia </span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="armenia armenie">
+                        <img src="https://flagcdn.com/w80/am.png" alt="Armenia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Armenia </span>
+                            <span class="country-lang"> Հայերեն </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="azerbaijan">
+                        <img src="https://flagcdn.com/w80/az.png" alt="Azerbaijan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Azerbaijan </span>
+                            <span class="country-lang"> Русский </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="brunei">
+                        <img src="https://flagcdn.com/w80/bn.png" alt="Brunei" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Brunei </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="cambodia cambodge">
+                        <img src="https://flagcdn.com/w80/kh.png" alt="Cambodia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Cambodia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="china chine">
+                        <img src="https://flagcdn.com/w80/cn.png" alt="China" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> China Mainland </span>
+                            <span class="country-lang"> 中文 </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="china chine">
+                        <img src="https://flagcdn.com/w80/cn.png" alt="China" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> China Mainland </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="hong-kong">
+                        <img src="https://flagcdn.com/w80/hk.png" alt="Hong-Kong" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Hong-Kong & Macau </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="india inde">
+                        <img src="https://flagcdn.com/w80/in.png" alt="India" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> India </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="indonesia indonesie">
+                        <img src="https://flagcdn.com/w80/id.png" alt="Indonesia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Indonesia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="japan japon">
+                        <img src="https://flagcdn.com/w80/jp.png" alt="Japan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name">Japan</span>
+                            <span class="country-lang">日本語</span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="kazakhstan">
+                        <img src="https://flagcdn.com/w80/kz.png" alt="Kazakhstan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Kazakhstan </span>
+                            <span class="country-lang"> Русский </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="malaysia malaisie">
+                        <img src="https://flagcdn.com/w80/my.png" alt="Malaysia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Malaysia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="mongolia mongolie">
+                        <img src="https://flagcdn.com/w80/mn.png" alt="Mongolia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Mongolia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="philippines">
+                        <img src="https://flagcdn.com/w80/ph.png" alt="Philippines" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Philippines </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="singapore singapour">
+                        <img src="https://flagcdn.com/w80/sg.png" alt="Singapore" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Singapore </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="south korea coree du sud">
+                        <img src="https://flagcdn.com/w80/kr.png" alt="South Korea" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> South Korea </span>
+                            <span class="country-lang"> 한국어 </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="sri lanka">
+                        <img src="https://flagcdn.com/w80/lk.png" alt="Sri Lanka" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Sri Lanka </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="taiwan">
+                        <img src="https://flagcdn.com/w80/tw.png" alt="Taiwan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Taiwan </span>
+                            <span class="country-lang"> </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="taiwan">
+                        <img src="https://flagcdn.com/w80/tw.png" alt="Taiwan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Taiwan </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="thailand thailande">
+                        <img src="https://flagcdn.com/w80/th.png" alt="Thailand" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Thailand </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="türkiye turkie">
+                        <img src="https://flagcdn.com/w80/tr.png" alt="Türkiye" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Türkiye </span>
+                            <span class="country-lang"> Türkçe 中文</span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="uzbekistan">
+                        <img src="https://flagcdn.com/w80/uz.png" alt="Uzbekistan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Uzbekistan </span>
+                            <span class="country-lang"> Uzbek </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="vietnam">
+                        <img src="https://flagcdn.com/w80/vn.png" alt="Vietnam" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Vietnam </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="other countries">
+                        <div class="flag-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="country-info">
+                            <span class="country-name"> Other countries </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AUSTRALIE / OCÉANIE -->
+            <div class="region-section" data-region="australia oceania">
+                <button class="region-toggle" type="button">
+                    <span class="region-title">Australia/Oceania</span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="australia australie">
+                        <img src="https://flagcdn.com/w80/au.png" alt="Australia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Australia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="french polinesia polinesie francaise">
+                        <img src="https://flagcdn.com/w80/pf.png" alt="French Polinesia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> French Polinesia</span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="new caledonia nouvelle caledonie">
+                        <img src="https://flagcdn.com/w80/nc.png" alt="New Caledonia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> New Caledonia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="new zealand nouvelle zelande">
+                        <img src="https://flagcdn.com/w80/nz.png" alt="New Zealand" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> New Zealand </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="other countries">
+                        <div class="flag-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="country-info">
+                            <span class="country-name"> Other countries </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- EUROPE -->
+            <div class="region-section open" data-region="europe">
+                <button class="region-toggle" type="button">
+                    <span class="region-title"> Europe </span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="austria autriche">
+                        <img src="https://flagcdn.com/w80/at.png" alt="Austria" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Austria </span>
+                            <span class="country-lang"> Deutsch </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="belgium belgique">
+                        <img src="https://flagcdn.com/w80/be.png" alt="Belgium" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Belgium </span>
+                            <span class="country-lang"> Nederlands </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="belgium belgique">
+                        <img src="https://flagcdn.com/w80/be.png" alt="Belgium" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Belgium </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="bulgaria bulgarie">
+                        <img src="https://flagcdn.com/w80/bg.png" alt="Bulgaria" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Bulgaria </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="croatia croatie">
+                        <img src="https://flagcdn.com/w80/hr.png" alt="Croatia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Croatia </span>
+                            <span class="country-lang"> Hrvatski </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="cyprus chypre">
+                        <img src="https://flagcdn.com/w80/cy.png" alt="Cyprus" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Cyprus </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="czech republic republique-tcheque">
+                        <img src="https://flagcdn.com/w80/cz.png" alt="Czech Republic" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Czech Republic </span>
+                            <span class="country-lang"> Čeština </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="denmark danemark">
+                        <img src="https://flagcdn.com/w80/dk.png" alt="Denmark" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Denmark </span>
+                            <span class="country-lang"> Dansk </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="estonia estonie">
+                        <img src="https://flagcdn.com/w80/ee.png" alt="Estonia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Estonia </span>
+                            <span class="country-lang"> Eesti </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="finland finlande">
+                        <img src="https://flagcdn.com/w80/fi.png" alt="Finland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Finland </span>
+                            <span class="country-lang"> Suomi </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="france">
+                        <img src="https://flagcdn.com/w80/fr.png" alt="France" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> France </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="georgia georgie">
+                        <img src="https://flagcdn.com/w80/ge.png" alt="Georgia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Georgia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="germany allemagne">
+                        <img src="https://flagcdn.com/w80/de.png" alt="Germany" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Germany </span>
+                            <span class="country-lang"> Deutsch </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="great britian grande-bretagne">
+                        <img src="https://flagcdn.com/w80/gb.png" alt="Great Britian" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Great Britian </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="greece grece">
+                        <img src="https://flagcdn.com/w80/gr.png" alt="Greece" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Greece </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="hungary hongrie">
+                        <img src="https://flagcdn.com/w80/hu.png" alt="Hungary" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Hungary </span>
+                            <span class="country-lang"> Magyar </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="iceland islande">
+                        <img src="https://flagcdn.com/w80/is.png" alt="Iceland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Iceland </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="ireland irlande">
+                        <img src="https://flagcdn.com/w80/ie.png" alt="Ireland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Ireland </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="italy italie">
+                        <img src="https://flagcdn.com/w80/it.png" alt="Italy" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Italy </span>
+                            <span class="country-lang"> Italiano </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="latvia Lettonie">
+                        <img src="https://flagcdn.com/w80/lv.png" alt="Latvia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Latvia </span>
+                            <span class="country-lang"> Latviešu </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="lithuania lituanie">
+                        <img src="https://flagcdn.com/w80/lt.png" alt="Lithuania" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Lithuania </span>
+                            <span class="country-lang"> Lietuvių </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="luxembourg">
+                        <img src="https://flagcdn.com/w80/lu.png" alt="Luxembourg" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Luxembourg </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="malta malte">
+                        <img src="https://flagcdn.com/w80/mt.png" alt="Malta" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Malta </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="moldova moldavie">
+                        <img src="https://flagcdn.com/w80/md.png" alt="Moldova" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Moldova </span>
+                            <span class="country-lang"> Русский </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="netherlands pays-bas">
+                        <img src="https://flagcdn.com/w80/nl.png" alt="Netherlands" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Netherlands </span>
+                            <span class="country-lang"> Netherlands </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="norway norvege">
+                        <img src="https://flagcdn.com/w80/no.png" alt="Norway" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Norway </span>
+                            <span class="country-lang"> Norsk </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="poland pologne">
+                        <img src="https://flagcdn.com/w80/pl.png" alt="Poland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Poland </span>
+                            <span class="country-lang"> Polski </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="portugal">
+                        <img src="https://flagcdn.com/w80/pt.png" alt="Portugal" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Portugal </span>
+                            <span class="country-lang"> Português </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="romania roumanie">
+                        <img src="https://flagcdn.com/w80/ro.png" alt="Romania" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Romania </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="serbia serbie">
+                        <img src="https://flagcdn.com/w80/rs.png" alt="Serbia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Serbia </span>
+                            <span class="country-lang"> Serbian </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="slovakia slovaquie">
+                        <img src="https://flagcdn.com/w80/sk.png" alt="Slovakia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Slovakia </span>
+                            <span class="country-lang"> Slovenčina </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="slovenia slovenie">
+                        <img src="https://flagcdn.com/w80/si.png" alt="Slovenia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Slovenia </span>
+                            <span class="country-lang"> Slovenščina </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="spain espagne">
+                        <img src="https://flagcdn.com/w80/es.png" alt="Spain" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Spain </span>
+                            <span class="country-lang"> Español </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="sweden suede">
+                        <img src="https://flagcdn.com/w80/se.png" alt="Sweden" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Sweden </span>
+                            <span class="country-lang"> Svenska </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="switzerland suisse">
+                        <img src="https://flagcdn.com/w80/ch.png" alt="Switzerland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Switzerland </span>
+                            <span class="country-lang"> Deutsch </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="switzerland suisse">
+                        <img src="https://flagcdn.com/w80/ch.png" alt="Switzerland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Switzerland </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="switzerland suisse">
+                        <img src="https://flagcdn.com/w80/ch.png" alt="Switzerland" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Switzerland </span>
+                            <span class="country-lang"> Italiano </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card current" data-country="ukraine">
+                        <img src="https://flagcdn.com/w80/ua.png" alt="Ukraine" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Ukraine </span>
+                            <span class="country-lang"> Українська </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="other countries">
+                        <div class="flag-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="country-info">
+                            <span class="country-name"> Other countries </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AMÉRIQUE LATINE -->
+            <div class="region-section" data-region="latin america amerique latine">
+                <button class="region-toggle" type="button">
+                    <span class="region-title"> Latin America </span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <div class="country-grid">
+                        <a href="../index.html" class="country-card" data-country="argentina argentine">
+                            <img src="https://flagcdn.com/w80/ar.png" alt="Argentina" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Argentina </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="brazil bresil">
+                            <img src="https://flagcdn.com/w80/br.png" alt="Brazil" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Brazil </span>
+                                <span class="country-lang"> Português </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="chile chili">
+                            <img src="https://flagcdn.com/w80/cl.png" alt="Chile" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Chile </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="colombia colombie">
+                            <img src="https://flagcdn.com/w80/co.png" alt="Colombia" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Colombia </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="costa rica">
+                            <img src="https://flagcdn.com/w80/cr.png" alt="Costa Rica" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Costa Rica </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="curacao">
+                            <img src="https://flagcdn.com/w80/cw.png" alt="Curacao" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Curacao </span>
+                                <span class="country-lang"> Netherlands </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card"
+                            data-country="dominican republic republique dominicaine">
+                            <img src="https://flagcdn.com/w80/do.png" alt="Dominican Republic" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Dominican Republic </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="ecuador equateur">
+                            <img src="https://flagcdn.com/w80/ec.png" alt="Ecuador" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Ecuador </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="el salvador le salvador">
+                            <img src="https://flagcdn.com/w80/sv.png" alt="El Salvador" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> El Salvador </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="guadeloupe">
+                            <img src="https://flagcdn.com/w80/gp.png" alt="Guadeloupe" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Guadeloupe </span>
+                                <span class="country-lang"> Français </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="guatemala">
+                            <img src="https://flagcdn.com/w80/gt.png" alt="Guatemala" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Guatemala </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="honduras">
+                            <img src="https://flagcdn.com/w80/hn.png" alt="Honduras" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Honduras </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="jamaica jamaique">
+                            <img src="https://flagcdn.com/w80/jm.png" alt="Jamaica" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Jamaica </span>
+                                <span class="country-lang"> English </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="martinique">
+                            <img src="https://flagcdn.com/w80/mq.png" alt="Martinique" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Martinique </span>
+                                <span class="country-lang"> Français </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="mexico mexique">
+                            <img src="https://flagcdn.com/w80/mx.png" alt="Mexico" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Mexico </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="panama">
+                            <img src="https://flagcdn.com/w80/pa.png" alt="Panama" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Panama </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="paraguay">
+                            <img src="https://flagcdn.com/w80/py.png" alt="Paraguay" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Paraguay </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="peru perou">
+                            <img src="https://flagcdn.com/w80/pe.png" alt="Peru" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Peru </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="puerto rico portorico">
+                            <img src="https://flagcdn.com/w80/pr.png" alt="Puerto Rico" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Puerto Rico </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card"
+                            data-country="trinidad and tobago trinidad et tabago">
+                            <img src="https://flagcdn.com/w80/tt.png" alt="Trinidad and Tobago" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Trinidad and Tobago </span>
+                                <span class="country-lang"> English </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="uruguay">
+                            <img src="https://flagcdn.com/w80/uy.png" alt="Uruguay" class="flag-icon">
+                            <div class="country-info">
+                                <span class="country-name"> Uruguay </span>
+                                <span class="country-lang"> Español </span>
+                            </div>
+                        </a>
+                        <a href="../index.html" class="country-card" data-country="other countries">
+                            <div class="flag-globe">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <div class="country-info">
+                                <span class="country-name"> Other countries </span>
+                                <span class="country-lang"> English </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="region-section" data-region="middle east moyen-orient">
+                <button class="region-toggle" type="button">
+                    <span class="region-title"> Middle East </span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="abu dhabi">
+                        <img src="https://flagcdn.com/w80/ae.png" alt="Abu Dhabi" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Abu Dhabi </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="bahrain bahrein">
+                        <img src="https://flagcdn.com/w80/bh.png" alt="Bahrain" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Bahrain </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="dubai">
+                        <img src="https://flagcdn.com/w80/ae.png" alt="Dubai" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Dubai </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="fujairah ">
+                        <img src="https://flagcdn.com/w80/ae.png" alt="Fujairah" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Fujairah </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="israel">
+                        <img src="https://flagcdn.com/w80/is.png" alt="Israel" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Israel </span>
+                            <span class="country-lang"> עברית </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="jordan jordanie">
+                        <img src="https://flagcdn.com/w80/jo.png" alt="Jordan" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Jordan </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+
+                    </a><a href="../index.html" class="country-card" data-country="kuwait koweit">
+                        <img src="https://flagcdn.com/w80/kw.png" alt="Kuwait" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Kuwait </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="lebanon liban">
+                        <img src="https://flagcdn.com/w80/lb.png" alt="Lebanon" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Lebanon </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="oman">
+                        <img src="https://flagcdn.com/w80/om.png" alt="Oman" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Oman </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="qatar">
+                        <img src="https://flagcdn.com/w80/qa.png" alt="Qatar" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Qatar </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="saudi arabia arabie saoudite">
+                        <img src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Saudi Arabia </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="sharjah charjah">
+                        <img src="https://flagcdn.com/w80/ae.png" alt="sharjah" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Sharjah </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="other countries">
+                        <div class="flag-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="country-info">
+                            <span class="country-name"> Other countries </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AMÉRIQUE DU NORD -->
+            <div class="region-section" data-region="north america amerique du nord">
+                <button class="region-toggle" type="button">
+                    <span class="region-title">North America</span>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="country-grid">
+                    <a href="../index.html" class="country-card" data-country="canada">
+                        <img src="https://flagcdn.com/w80/ca.png" alt="Canada" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Canada </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="canada">
+                        <img src="https://flagcdn.com/w80/ca.png" alt="Canada" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> Canada </span>
+                            <span class="country-lang"> Français </span>
+                        </div>
+                    </a>
+                    <a href="../index.html" class="country-card" data-country="usa etats-unis">
+                        <img src="https://flagcdn.com/w80/us.png" alt="United States" class="flag-icon">
+                        <div class="country-info">
+                            <span class="country-name"> USA </span>
+                            <span class="country-lang"> English </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
